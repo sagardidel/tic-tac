@@ -61,7 +61,7 @@ const iwinArr: string[][] = [
 const aarr = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 const TicTac: FC = () => {
-    const [moves, setMoves] = useState<movesType>(0)
+    const [moves, setMoves] = useState<number>(0)
     const [winner, setWinner] = useState<string>('')
     const [isGameOver, setIsGameOver] = useState<boolean>(false)
     const [xORo, setXorO] = useState<xORoType>(undefined)
