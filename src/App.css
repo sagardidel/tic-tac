@@ -1,117 +1,146 @@
-
-.container{
+.container {
   width: 100%;
   height: 59vh;
 }
-.sub-container{
+
+.sub-container {
   display: flex;
-  border-bottom: 2px solid  salmon;
+  border-bottom: 2px solid salmon;
   justify-content: space-around;
   align-items: center;
   height: 100px;
 }
 
-.game-div{
+.game-div {
   display: flex;
   height: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
-.grid-layout{
- display: grid;
- width: 20vw;
- align-self: center;
- align-content: center;
- grid-template-columns: auto auto auto;
- border:1px solid rgb(216, 216, 216);
- border-radius: 12px;
- background-color: rgb(255, 255, 255);
- padding: 10px ;
- box-shadow: 2px 2px 20px grey ;
+.grid-layout {
+  display: grid;
+  width: 20vw;
+  align-self: center;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 2px 2px 20px grey;
 }
 
-.grid-item{
+.grid-item {
   color: rgb(138, 15, 15);
-  border:5px solid rgb(255, 73, 73);
+  border: 5px solid rgb(255, 73, 73);
   padding: 20px;
   min-height: 50px;
   font-size: xx-large;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 
 }
 
 
-.item1{
+.item1 {
   border-top: none;
   border-left: none;
 }
-.item2{
+
+.item2 {
   border-top: none;
 
 }
-.item3{
+
+.item3 {
   border-top: none;
   border-right: none;
 
 }
 
-.item4{
+.item4 {
   border-left: none;
 
 }
-.item6{
+
+.item6 {
   border-right: none;
 }
 
-.item7{
+.item7 {
   border-bottom: none;
-  border-left: none; 
+  border-left: none;
 }
 
-.item8{
+.item8 {
   border-bottom: none;
-  
+
 }
-.item9{
+
+.item9 {
   border-bottom: none;
   border-right: none;
 }
 
-
-
-
-
-
-
-.select-div{
- display: flex;
- background-color: rgb(80, 87, 87);
+.select-div {
+  display: flex;
+  background-color: rgb(80, 87, 87);
 
 }
-.select{
- background-color: rgb(183, 183, 183); 
- border: none;
- border-bottom: 2px solid rgb(189, 91, 104) ;
- width: 300px;
+
+.select {
+  background-color: rgb(183, 183, 183);
+  border: none;
+  border-bottom: 2px solid rgb(189, 91, 104);
+  width: 300px;
 }
 
-.select:focus{
+.select:focus {
   border: none;
 }
 
-.option{
- background-color: rgb(255, 237, 237); 
- border: none;
- width: fit-content ;
+.option {
+  background-color: rgb(255, 237, 237);
+  border: none;
+  width: fit-content;
 }
 
 
+@media screen and (max-width: 432px) {
+  .sub-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 10px;
+  }
 
 
+}
 
 
+@media screen and (max-width: 910px) {
+  .grid-layout {
+    width: 30vw;
+  }
 
+
+}
+
+
+@media screen and (max-width: 676px) {
+  .grid-layout {
+    width: 50vw;
+  }
+
+
+}
+
+@media screen and (max-width: 420px) {
+  .grid-layout {
+    width: 90vw;
+  }
+
+
+}
